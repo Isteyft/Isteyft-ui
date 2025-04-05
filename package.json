@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm --filter @Isteyft-ui/play dev",
     "docs:dev": "pnpm --filter @Isteyft-ui/docs dev",
-    "docs:build": "pnpm --filter @Isteyft-ui/docs build"
+    "docs:build": "pnpm --filter @Isteyft-ui/docs build",
+	"test": "pnpm --filter @is-ui/components test"
   },
   "keywords": [],
   "author": "",
