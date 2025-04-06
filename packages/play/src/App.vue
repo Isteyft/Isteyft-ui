@@ -3,7 +3,7 @@ import { IButton } from 'Isteyft-ui';
 </script>
 
 <template>
-  <IButton />
+  <IButton type="primary" size="default"> this is IButton </IButton>
 </template>
 
 <style scoped>
