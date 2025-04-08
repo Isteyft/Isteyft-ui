@@ -39,7 +39,7 @@ describe("Button.vue", () => {
       const wrapper = mount(Button, {
         props: { [prop]: true },
         global: {
-          stubs: ["ErIcon"],
+          stubs: ["IIcon"],
         },
       });
       expect(wrapper.classes()).toContain(className);
