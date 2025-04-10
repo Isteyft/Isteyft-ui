@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, inject } from "vue";
 import type {ButtonProps, ButtonEmits, ButtonInstance} from './types'
 import {throttle} from 'lodash-es'
-// import { IIcon } from "Isteyft-ui";
-import IIcon from "../Icon/Icon.vue"
+// import IIcon from "../Icon/Icon.vue"
+import { BUTTON_GROUP_CTX_KEY } from "./contants";
 
 defineOptions({
     name: 'IButton'
@@ -18,8 +18,11 @@ const props =  withDefaults(defineProps<ButtonProps>(), {
 const emits = defineEmits<ButtonEmits>()
 
 const slots = defineSlots()
-
-const _ref = ref<HTMLButtonElement>()
+const ctx = inject(BUTTON_GROUP_CTX_KEY, void 0);
+const _ref = ref<HTMLButtonElement>();
+const size = computed(() => ctx?.size ?? props?.size ?? "");
+const type = computed(() => ctx?.type ?? props?.type ?? "");
+const disabled = computed(() => ctx?.disabled || props?.disabled || false);
 const iconStyle = computed(()=>{marginRight: slots.default ? "6px" : "0px"})
 
 

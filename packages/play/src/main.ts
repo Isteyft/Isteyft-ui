@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 import IsteyftUi from 'Isteyft-ui'
+import 'Isteyft-ui/dist/index.css'
 
 createApp(App).use(IsteyftUi).mount('#app')
