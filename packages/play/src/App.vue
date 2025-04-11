@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IButton } from 'Isteyft-ui';
+import { IButton } from 'isteyft-ui';
 </script>
 
 <template>

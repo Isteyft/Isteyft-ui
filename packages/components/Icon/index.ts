@@ -1,5 +1,5 @@
 import Icon from "./Icon.vue";
-import { withInstall } from "@Isteyft-ui/utils";
+import { withInstall } from "@isteyft-ui/utils";
 
 export const IIcon = withInstall(Icon);
 

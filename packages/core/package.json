@@ -1,5 +1,5 @@
 {
-  "name": "Isteyft-ui",
+  "name": "isteyft-ui",
   "version": "1.0.0",
   "description": "Components library by Vue3 + TS",
   "type": "module",
@@ -29,10 +29,12 @@
     "build-umd": "vite build --config vite.umd.config.ts",
     "build-es": "vite build --config vite.es.config.ts",
     "move-style": "move-file dist/es/index.css dist/index.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "release": "release-it"
   },
   "dependencies": {
-    "@Isteyft-ui/components": "workspace:*"
+    "@isteyft-ui/components": "workspace:*"
   },
   "keywords": [],
   "author": "",

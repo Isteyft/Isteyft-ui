@@ -2,7 +2,7 @@ import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 import { fn, within, userEvent, expect, clearAllMocks } from "@storybook/test";
 import { set } from "lodash-es";
 
-import { IButton, IButtonGroup } from "Isteyft-ui";
+import { IButton, IButtonGroup } from "isteyft-ui";
 import 'toy-element/dist/theme/Button.css';
 
 type Story = StoryObj<typeof IButton> & { argTypes?: ArgTypes };
@@ -239,7 +239,7 @@ export default meta;
 
 // import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 // import { fn, within, userEvent, expect } from "@storybook/test";
-// import {IButton, IButtonGroup} from 'Isteyft-ui'
+// import {IButton, IButtonGroup} from 'isteyft-ui'
 
 // type Story = StoryObj<typeof IButton> & { argTypes?: ArgTypes };
 

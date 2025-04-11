@@ -1,5 +1,5 @@
 import Button from "./Button.vue";
-import { withInstall } from "@Isteyft-ui/utils";
+import { withInstall } from "@isteyft-ui/utils";
 import ButtonGroup from "./ButtonGroup.vue";
 
 export const IButton = withInstall(Button);

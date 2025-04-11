@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Isteyft UI",
-  description: "Isteyft的UI组件",
-  base: "/Isteyft-ui/",
+  title: "isteyft UI",
+  description: "isteyft的UI组件",
+  base: "/isteyft-ui/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
