@@ -3,7 +3,7 @@ import { fn, within, userEvent, expect, clearAllMocks } from "@storybook/test";
 import { set } from "lodash-es";
 
 import { IButton, IButtonGroup } from "isteyft-ui";
-import 'toy-element/dist/theme/Button.css';
+// import 'isteyft-ui/dist/theme/Button.css';
 
 type Story = StoryObj<typeof IButton> & { argTypes?: ArgTypes };
 

@@ -1,0 +1,58 @@
+.er-collapse {
+    --i-collapse-border-color: var(--i-border-color-light);
+    --i-collapse-header-height: 48px;
+    --i-collapse-header-bg-color: var(--i-fill-color-blank);
+    --i-collapse-header-text-color: var(--i-text-color-primary);
+    --i-collapse-header-font-size: 13px;
+    --i-collapse-content-bg-color: var(--i-fill-color-blank);
+    --i-collapse-content-font-size: 13px;
+    --i-collapse-content-text-color: var(--i-text-color-primary);
+    --i-collapse-disabled-text-color: var(--i-disabled-text-color);
+    --i-collapse-disabled-border-color: var(--i-border-color-lighter);
+    border-top: 1px solid var(--i-collapse-border-color);
+    border-bottom: 1px solid var(--i-collapse-border-color);
+  }
+  
+  .er-collapse-item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--i-collapse-header-height);
+    line-height: var(--i-collapse-header-height);
+    background-color: var(--i-collapse-header-bg-color);
+    color: var(--i-collapse-header-text-color);
+    cursor: pointer;
+    font-size: var(--i-collapse-header-font-size);
+    font-weight: 500;
+    transition: border-bottom-color var(--i-transition-duration);
+    outline: none;
+    border-bottom: 1px solid var(--i-collapse-border-color);
+    &.is-disabled {
+      color: var(--i-collapse-disabled-text-color);
+      cursor: not-allowed;
+      background-image: none;
+    }
+    &.is-active {
+      border-bottom-color: transparent;
+      .header-angle {
+        transform: rotate(90deg);
+      }
+    }
+    .header-angle {
+      transition: transform var(--i-transition-duration);
+    }
+  }
+  .er-collapse-item__content {
+    will-change: height;
+    background-color: var(--i-collapse-content-bg-color);
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: var(--i-collapse-content-font-size);
+    color: var(--i-collapse-content-text-color);
+    border-bottom: 1px solid var(--i-collapse-border-color);
+    padding-bottom: 25px;
+  }
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: height var(--i-transition-duration) ease-in-out;
+  }
